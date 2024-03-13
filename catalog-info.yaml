@@ -9,5 +9,6 @@ spec:
   type: openapi
   lifecycle: production
   owner: Pete
-  $text: http://localhost:8000/swagger/v1/swagger.json
+  definition: 
+    $text: http://localhost:8000/swagger/v1/swagger.json
   
