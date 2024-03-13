@@ -1,14 +1,22 @@
 apiVersion: backstage.io/v1alpha1
-kind: API
+kind: Component
 metadata:
-  name: angular-pwa-poc-api
-  description: Terrible api that drives the PWA POC
+  name: artist-web
+  description: The place to be, for great artists
+  labels:
+    example.com/custom: custom_label_value
+  annotations:
+    example.com/service-discovery: artistweb
+    circleci.com/project-slug: github/example-org/artist-website
   tags:
-    - dotnet
+    - java
+  links:
+    - url: https://admin.example-org.com
+      title: Admin Dashboard
+      icon: dashboard
+      type: admin-dashboard
 spec:
-  type: openapi
+  type: website
   lifecycle: production
-  owner: Pete
-  definition: 
-    $text: http://localhost:8000/swagger/v1/swagger.json
-  
+  owner: artist-relations-team
+  system: public-websites
