@@ -1,4 +1,4 @@
-apiVersion: Angular.PWA.POC.API/v1
+apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
   name: angular-pwa-poc-api
